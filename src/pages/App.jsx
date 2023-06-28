@@ -11,7 +11,9 @@ function App() {
       <div className="location">
         <Mapa/>
       </div>
-      <Outlet/>
+      <div className='formulario'>
+        <Outlet/>
+      </div>
     </div>
   )
 }
