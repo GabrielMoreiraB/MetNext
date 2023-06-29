@@ -16,7 +16,7 @@ const Informacoes = () => {
         e.preventDefault();
         return navigate('/plano')
     }
-    
+    console.log(nome, email, tel)
   return (
     <div>
       <h1>Informações Pessoais</h1>
@@ -45,7 +45,11 @@ const Informacoes = () => {
         aoAlterado={valor => setTel(valor)}
       />
 
-      <button onClick={(e)=> jogaParaPlano(e)}>Next </button>
+      <button
+      disabled={!nome || !email || !tel}
+       onClick={(e)=> jogaParaPlano(e)}
+       >Next 
+       </button>
     </div>
   );
 };
