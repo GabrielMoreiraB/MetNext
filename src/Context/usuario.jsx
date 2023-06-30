@@ -9,6 +9,7 @@ export const UsuarioProvider = ({children}) => {
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
     const [anual, setAnual]= useState(false);
+    const [valorPlano, setValorPlano] = useState('');
 
     return (
         <UsuarioContext.Provider
@@ -22,6 +23,8 @@ export const UsuarioProvider = ({children}) => {
                 setTel,
                 anual, 
                 setAnual,
+                valorPlano, 
+                setValorPlano
             }
         }>
             {children}

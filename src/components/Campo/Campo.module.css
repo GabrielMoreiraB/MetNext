@@ -1,0 +1,23 @@
+.campo{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 24px;
+    text-align: start;
+}
+
+.campo input{
+    background-color: #ffffff;
+    color: #483EFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.31);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

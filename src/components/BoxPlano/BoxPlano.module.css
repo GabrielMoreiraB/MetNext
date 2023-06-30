@@ -10,6 +10,7 @@
     height: 180px;
     padding: .5em;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .containerText{
@@ -25,4 +26,8 @@
 
 .anual{
     color: rgb(26, 197, 10);
+}
+
+.selected{
+    border: 1px solid #483EFF;
 }

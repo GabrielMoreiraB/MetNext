@@ -5,7 +5,7 @@ import styles from './Plano.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Plano = () => {
-  const { anual, setAnual, jogaPara } = useContext(UsuarioContext);
+  const { anual, setAnual, valorPlano } = useContext(UsuarioContext);
 
 
   const navigate = useNavigate()
@@ -22,7 +22,7 @@ function jogaParaInfo(e){
 
   return (
     <div className={styles.plano}>
-      <h2>Selecione um Plano para você!</h2>
+      <h1>Selecione um Plano para você!</h1>
       <p className={styles.subtitulo}>
         Você pode efetuar o pagamento de forma mensal ou anual com desconto 😉
       </p>
@@ -50,12 +50,12 @@ function jogaParaInfo(e){
       </div>
 
       <div className={styles.checkbox}>
-        <h2>Mensal</h2>
+        <h2 className={`${(anual == false) ? styles.selectTime : ''}`}>Mensal</h2>
         <label className={styles.switch}>
             <input type="checkbox" onChange={()=>setAnual(!anual) }/>
             <span className={styles.slider}></span>
         </label>
-        <h2>Anual</h2>
+        <h2 className={`${(anual == true) ? styles.selectTime : ''}`}>Anual</h2>
       </div>
 
       <div className={styles.botoes}>
@@ -65,7 +65,8 @@ function jogaParaInfo(e){
        >Back
        </button>
 
-      <button
+       <button
+       disabled={!valorPlano}
        onClick={(e)=> jogaParaCom(e)}
        >Next 
        </button>

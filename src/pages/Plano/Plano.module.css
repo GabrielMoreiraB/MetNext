@@ -19,11 +19,12 @@
 
 
 .checkbox{
-    margin: 2em ;
+    margin: 1em ;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2em;
+    color: #A399AB;
 }
 
 .switch {
@@ -70,6 +71,11 @@
   }
 
   .botoes{
-    justify-items: end;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .selectTime{
+    color: white;
   }
   

@@ -1,4 +1,4 @@
-
+import styles from './Campo.module.css';
 
 const Campo = ({label, type, placeholder, valor, aoAlterado}) => {
 
@@ -6,7 +6,7 @@ const Campo = ({label, type, placeholder, valor, aoAlterado}) => {
         aoAlterado(e.target.value)
     }
     return ( 
-        <div className="campo">
+        <div className={styles.campo}>
         <label >{label}</label>
         <input 
         type={type}

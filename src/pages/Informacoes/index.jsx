@@ -1,4 +1,4 @@
-
+import styles from './Informacoes.module.css';
 import { useContext } from 'react';
 import { UsuarioContext } from '../../Context/usuario';
 import Campo from '../../components/Campo';
@@ -18,7 +18,7 @@ const Informacoes = () => {
     }
     console.log(nome, email, tel)
   return (
-    <div>
+    <div className={styles.informacoes}>
       <h1>Informações Pessoais</h1>
       <p>Por favor informe seu email, nome e telefone.</p>
       <Campo
@@ -46,6 +46,7 @@ const Informacoes = () => {
       />
 
       <button
+      className={styles.botao}
       disabled={!nome || !email || !tel}
        onClick={(e)=> jogaParaPlano(e)}
        >Next 
