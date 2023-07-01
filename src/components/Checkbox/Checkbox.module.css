@@ -1,0 +1,27 @@
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #A399AB;
+    border-radius: 10px;
+    padding: 1em;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.span{
+    color: #A399AB;
+}
+
+.info{
+    text-align: start;
+}
+
+.selected{
+    border: 1px solid #483EFF;
+    background-color: #141147;
+    transition: .5s;
+}

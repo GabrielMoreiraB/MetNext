@@ -30,4 +30,6 @@
 
 .selected{
     border: 1px solid #483EFF;
+    background-color: #141147;
+    transition: .5s;
 }
