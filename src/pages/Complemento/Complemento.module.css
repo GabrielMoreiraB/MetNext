@@ -2,5 +2,10 @@
     color: #A399AB;
 }
 
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
 
 
