@@ -9,6 +9,7 @@ export const UsuarioProvider = ({children}) => {
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
     const [anual, setAnual]= useState(false);
+    const [plano, setPlano]= useState('');
     const [valorPlano, setValorPlano] = useState('');
     const [servcoOnline, setServcoOnline] = useState(false);
     const [armazenamentoMaior, setArmazenamentoMaior] = useState(false);
@@ -26,6 +27,8 @@ export const UsuarioProvider = ({children}) => {
                 setTel,
                 anual, 
                 setAnual,
+                plano, 
+                setPlano,
                 valorPlano, 
                 setValorPlano,
                 servcoOnline, 

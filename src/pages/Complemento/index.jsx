@@ -33,25 +33,28 @@ const Complementos = () => {
       <Checkbox
         titulo="Serviço on-line"
         legenda="Acesso a jogos multiplayer"
-        valor={anual ? '+R$10,00/ano' : '+R$1,00/ano'}
+        valor={anual ? '10' : '1'}
         boolean={servcoOnline}
         alAlterado={setServcoOnline}
+        anual={anual}
       />
 
       <Checkbox
         titulo="Armazenamento maior"
         legenda="1 TB extra de armazenamento na nuvem"
-        valor={anual ? '+R$20,00/ano' : '+R$2,00/ano'}
+        valor={anual ? '20' : '2'}
         boolean={armazenamentoMaior}
         alAlterado={setArmazenamentoMaior}
+        anual={anual}
       />
 
       <Checkbox
         titulo="Perfil personalizável"
         legenda="Tema personalizado em seu perfil"
-        valor={anual ? '+R$20,00/ano' : '+R$2,00/ano'}
+        valor={anual ? '20' : '2'}
         boolean={perfilPersonalizavel}
         alAlterado={setPerfilPersonalizavel}
+        anual={anual}
       />
 
       <div className={styles.botoes}>

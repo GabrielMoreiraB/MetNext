@@ -31,21 +31,21 @@ function jogaParaInfo(e){
           icon={'icon-arcade.svg'}
           name="Arcade"
           anual={anual}
-          valor={anual ? 'R$90,00/ano' : 'R$9,00/mês'}
+          valor={anual ? '90' : '9'}
         />
 
         <BoxPlano
           icon={'icon-advanced.svg'}
           name="Advanced"
           anual={anual}
-          valor={anual ? 'R$120,00/ano' : 'R$12,00/mês'}
+          valor={anual ? '120' : '12'}
         />
 
         <BoxPlano
           icon={'icon-pro.svg'}
           name="Pro"
           anual={anual}
-          valor={anual ? 'R$150,00/ano' : 'R$15,00/mês'}
+          valor={anual ? '150' : '15'}
         />
       </div>
 
