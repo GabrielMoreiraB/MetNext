@@ -31,3 +31,7 @@
     grid-column: 2/3;
     justify-self: start;
 }
+
+.selected{
+    background-color: #5963a0;
+}

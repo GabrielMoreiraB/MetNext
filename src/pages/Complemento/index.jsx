@@ -11,7 +11,9 @@ const Complementos = () => {
           armazenamentoMaior, 
           setArmazenamentoMaior,
           perfilPersonalizavel,
-          setPerfilPersonalizavel } = useContext(UsuarioContext);
+          setPerfilPersonalizavel,
+          setPosi } = useContext(UsuarioContext);
+          setPosi(3)
 
   const navigate = useNavigate();
   function jogaParaPlano(e) {

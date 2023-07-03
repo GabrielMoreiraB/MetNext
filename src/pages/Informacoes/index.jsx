@@ -7,8 +7,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Informacoes = () => {
-  const { nome, setNome, email, setEmail, tel, setTel } =
+  const { nome, setNome, email, setEmail, tel, setTel, setPosi } =
     useContext(UsuarioContext);
+    setPosi(1)
 
     const navigate = useNavigate()
 

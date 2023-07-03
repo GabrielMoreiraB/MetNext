@@ -5,6 +5,7 @@ import { createContext, useState } from "react";
 export const UsuarioContext = createContext();
 
 export const UsuarioProvider = ({children}) => {
+    const [posi, setPosi]= useState(1);
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [tel, setTel] = useState('');
@@ -21,6 +22,8 @@ export const UsuarioProvider = ({children}) => {
         <UsuarioContext.Provider
         value={
             {
+                posi, 
+                setPosi,
                 nome, 
                 setNome,
                 email, 

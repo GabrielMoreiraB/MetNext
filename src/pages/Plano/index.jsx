@@ -5,8 +5,8 @@ import styles from './Plano.module.css';
 import { useNavigate } from 'react-router-dom';
 
 const Plano = () => {
-  const { anual, setAnual, valorPlano } = useContext(UsuarioContext);
-
+  const { anual, setAnual, valorPlano, setValorPlano, setPlano, setPosi } = useContext(UsuarioContext);
+  setPosi(2)
 
   const navigate = useNavigate()
   function jogaParaCom(e) {
@@ -52,7 +52,11 @@ function jogaParaInfo(e){
       <div className={styles.checkbox}>
         <h2 className={`${(anual == false) ? styles.selectTime : ''}`}>Mensal</h2>
         <label className={styles.switch}>
-            <input type="checkbox" onChange={()=>setAnual(!anual) }/>
+            <input type="checkbox" onChange={()=>{
+              setAnual(!anual)
+              setValorPlano('')
+              setPlano('')
+              } }/>
             <span className={styles.slider}></span>
         </label>
         <h2 className={`${(anual == true) ? styles.selectTime : ''}`}>Anual</h2>

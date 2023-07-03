@@ -11,8 +11,9 @@ const Res = () => {
            servcoOnline, 
            armazenamentoMaior, 
            perfilPersonalizavel,
+           setPosi
             } = useContext(UsuarioContext);
-            console.log(valorPlano)
+            setPosi(4)
             
     let temServico = servcoOnline ? ( anual ? '10': '1'): '0';
 
