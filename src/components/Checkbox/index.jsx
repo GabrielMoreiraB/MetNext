@@ -9,7 +9,8 @@ const Checkbox = ({titulo, legenda, valor, boolean, alAlterado, anual}) => {
         name="a" 
         id="a" 
         className={styles.checkbox} 
-        onClick={()=>alAlterado(!boolean)
+        checked={boolean}
+        onChange={()=>alAlterado(!boolean)
         }/>
         <div className={styles.info}>
           <h3>{titulo}</h3>

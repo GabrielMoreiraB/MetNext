@@ -22,3 +22,20 @@
     padding: 1em;
     color: #A399AB;
 }
+
+.tot{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #A399AB;
+    padding: 1em;
+}
+
+.tot h2{
+    color: #483EFF;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+  }

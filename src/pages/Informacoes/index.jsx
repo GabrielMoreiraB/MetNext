@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Informacoes = () => {
-  const { nome, setNome, email, setEmail, tel, setTel, me } =
+  const { nome, setNome, email, setEmail, tel, setTel } =
     useContext(UsuarioContext);
 
     const navigate = useNavigate()
@@ -16,7 +16,6 @@ const Informacoes = () => {
         e.preventDefault();
         return navigate('/plano')
     }
-    console.log(nome, email, tel)
   return (
     <div className={styles.informacoes}>
       <h1>Informações Pessoais</h1>

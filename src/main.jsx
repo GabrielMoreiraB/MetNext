@@ -9,7 +9,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Informacoes from './pages/Informacoes';
 import Plano from './pages/Plano';
 import Complemento from './pages/Complemento';
-import Resumo from './pages/Resumo';
+import Resumo from './pages/Resumo/index.jsx';
+import Fim from './pages/Fim/index.jsx'
 
 
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: 'resumo',
         element: <Resumo/>, 
+      },
+      {
+        path: 'fim',
+        element: <Fim/>, 
       }
     ]
   }

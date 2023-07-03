@@ -4,13 +4,13 @@ import { UsuarioContext } from '../../Context/usuario';
 
 const BoxPlano = ({ icon, name, valor, anual }) => {
 
-  const {valorPlano, 
-        setValorPlano,
-        setPlano } = useContext(UsuarioContext);
+  const {setValorPlano,
+        setPlano,
+        plano } = useContext(UsuarioContext);
 
   return (
     <div 
-    className={`${styles.container} ${(valorPlano == valor) ? styles.selected : ''}`} 
+    className={`${styles.container} ${(plano == name) ? styles.selected : ''}`} 
     onClick={()=> {
       setValorPlano(valor)
       setPlano(name)
