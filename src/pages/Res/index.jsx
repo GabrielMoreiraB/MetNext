@@ -4,7 +4,7 @@ import styles from './Resumo.module.css';
 import { useNavigate } from "react-router-dom";
 
 
-const Resumo = () => {
+const Res = () => {
     const {valorPlano, 
            plano, 
            anual, 
@@ -71,4 +71,4 @@ const Resumo = () => {
      );
 }
  
-export default Resumo;
+export default Res;
